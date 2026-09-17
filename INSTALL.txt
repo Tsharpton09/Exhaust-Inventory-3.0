@@ -1,0 +1,13 @@
+EXHAUST INVENTORY — FIXED BUILD
+
+This build fixes the JavaScript startup failure mode and stale PWA cache behavior.
+
+- The UI no longer crashes if the Supabase CDN client fails to load.
+- Buttons remain functional using local browser storage when Supabase is unavailable.
+- When Supabase is available and the inventory table/RLS are configured correctly, the app uses cloud storage.
+- A visible connection status appears under the title.
+- Service-worker cache was bumped and index.html is network-first so old app code is not served indefinitely.
+
+For shared cloud inventory, the Supabase `inventory` table should expose:
+id, name, part, make, order_link, stock, recommended, created_at
+and RLS/Data API policies must allow the intended operations.
