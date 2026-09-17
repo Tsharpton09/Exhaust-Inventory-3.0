@@ -1,0 +1,21 @@
+EXHAUST INVENTORY — PHONE INSTALL
+
+This package is a Progressive Web App (PWA).
+
+IMPORTANT: browsers require HTTPS for service workers/installability. The easiest route is to upload these files to a static HTTPS host, then open the site on your phone and choose "Add to Home Screen" / "Install App".
+
+The app works offline after its first successful load and stores inventory on the device.
+
+Features:
+- Empty starting inventory
+- Add/edit/delete parts
+- Current and recommended stock
+- Quick +/- counting
+- Search
+- Needs Ordering view
+- Automatic order quantity
+- CSV export
+- Installable home-screen app
+- Offline cache
+
+For cloud sync across multiple phones, authentication, shared inventory, barcode scanning, and automatic backups, a backend would be added in a later version.
